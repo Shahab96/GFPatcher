@@ -51,3 +51,12 @@ archive.pipe(output);
 diff.forEach(file => archive.file(file));
 
 archive.finalize();
+
+reference.forEach(file => {
+  if (diff.includes(file.File)) {
+    file.Date = moment().format('MM-DD-YYYY').toString(),
+    file.Hash = md5.sync(file);
+  }
+});
+
+fs.writeFileSync('./reference.json', reference);
