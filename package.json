@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "An app to isolate changes in each patch and generate manual patches out of them",
   "main": "src/main.js",
+  "scripts": {
+    "start": "node ./src/main.js"
+  },
   "author": "shahab96",
   "license": "MIT",
   "dependencies": {
