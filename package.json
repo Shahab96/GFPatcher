@@ -1,0 +1,13 @@
+{
+  "name": "gfpatcher",
+  "version": "0.0.1",
+  "description": "An app to isolate changes in each patch and generate manual patches out of them",
+  "main": "src/main.js",
+  "author": "shahab96",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "3.0.0",
+    "md5-file": "4.0.0",
+    "moment": "2.22.2"
+  }
+}
